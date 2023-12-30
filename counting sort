@@ -1,0 +1,12 @@
+Counting Sort (array P, array Q, int k)  
+ 1. For i ← 1 to k  
+ 2. do C [i] ← 0     [ θ(k) times]  
+ 3. for j  ← 1 to length [A]  
+ 4. do C[A[j]] ← C [A [j]]+1    [θ(n) times]  
+ 5. // C [i] now contain the number of elements equal to i  
+ 6. for i  ← 2 to k  
+ 7. do C [i]  ←  C [i] + C[i-1] [θ(k) times]  
+ 8. //C[i] now contain the number of elements ≤ i  
+ 9. for j ← length [A] down to 1 [θ(n) times]  
+ 10. do B[C[A[j]  ←  A [j]  
+ 11. C[A[j]  ←  C[A[j]-1  
