@@ -1,0 +1,15 @@
+If a > bk , then T(n)= Θ (nlogb a ) [ logb a = log a / log b. ]
+
+If a = bk
+
+If p > -1, then T(n) = Θ (nlogb a logp+1 n)
+
+If p = -1, then T(n) = Θ (n logb a log log n)
+
+If p < -1, then T(n) = Θ (n logb a)
+
+If a < bk,
+
+If p >= 0, then T(n) = Θ (nk logp n).
+
+If p < 0, then T(n) = Θ (nk)
