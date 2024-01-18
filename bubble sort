@@ -1,0 +1,45 @@
+// including the required header file  
+# include <bits/stdc++.h>  
+  
+// using the standard namespace  
+using namespace std;  
+  
+// defining a function to perform Bubble Sort  
+void BubbleSort(int arr[], int size){  
+      
+    // defining some iterables  
+    int i, j;  
+  
+    // using a nested for-loop  
+    for (i = 0; i < size - 1; i++)  
+        for (j = 0; j < size - i - 1; j++)  
+            // comparing the values of adjacent elements and swaping them if the first one is greater than the other   
+            if (arr[j] > arr[j + 1])  
+                swap(arr[j], arr[j + 1]);  
+}  
+  
+// main function  
+int main(){  
+    // defining and initializing an array  
+    int arr[] = {5, 3, 4, 2, 1};  
+  
+    // calculating the size of array  
+    int size = sizeof(arr) / sizeof(arr[0]);  
+  
+    // printing the unsorted array for the users  
+    cout << "Unsorted Array : \n";  
+    for (int i = 0; i < size; i++)  
+        cout << arr[i] << " ";  
+    cout << endl;  
+  
+    // calling the BubbleSort() function to sort the given array in ascending order  
+    BubbleSort(arr, size);  
+  
+    // printing the sorted array for the users  
+    cout << "Sorted Array : \n";  
+    for (int i = 0; i < size; i++)  
+        cout << arr[i] << " ";  
+    cout << endl;  
+  
+    return 0;  
+}  
